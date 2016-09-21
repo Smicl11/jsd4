@@ -8,23 +8,19 @@
 
 //converts F to C
 function calcFahrenheitToCelcius(f) {
-  var c = Math.round((f - 32) * 5/9);
-  return c;
+  return Math.round((f - 32) * 5/9);
 }
 
 function calcCelciusToFarenheit(c) {
-  var f = Math.round(c * (9/5) + 32);
-  return f;
+  return Math.round(c * (9/5) + 32);
 }
 
 //calculates circumference
 function calcCircumference(r) {
-  r = Math.round(2 * Math.PI * r);
-  return r;
+  return Math.round(2 * Math.PI * r);
 }
 
 // calculates Pythagorean theorem
 function calcLongestSide(a, b) {
-  var c = Math.round( Math.sqrt( (a * a) + (b * b) ) );
-  return c;
+  return Math.round( Math.sqrt( (a * a) + (b * b) ) );
 }
