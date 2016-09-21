@@ -23,6 +23,7 @@ function calcCircumference(r) {
   return r;
 }
 
+// calculates Pythagorean theorem
 function calcLongestSide(a, b) {
   var c = Math.round( Math.sqrt( (a * a) + (b * b) ) );
   return c;
