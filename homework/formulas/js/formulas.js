@@ -8,22 +8,19 @@
 
 //converts F to C
 function calcFahrenheitToCelcius(F) {
-  F = Math.round(F);
-  var C = ((F - 32) * 5/9);
-  C = Math.round(C);
+  var C = Math.round((F - 32) * 5/9);
   return C;
 }
 
 function calcCelciusToFarenheit(C) {
-  C = Math.round(C);
-  var F = (C * (9/5) + 32);
-  F = Math.round(F);
+  var F = Math.round(C * (9/5) + 32);
   return F;
 }
 
 //calculates circumference
-function calcCircumference(C) {
-
+function calcCircumference(R) {
+  R = Math.round(2 * Math.PI * R);
+  return R;
 }
 
 function calcLongSide(Height, Width) {
