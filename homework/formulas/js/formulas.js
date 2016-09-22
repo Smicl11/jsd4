@@ -11,6 +11,7 @@ function calcFahrenheitToCelcius(f) {
   return Math.round((f - 32) * 5/9);
 }
 
+//converts C to F
 function calcCelciusToFarenheit(c) {
   return Math.round(c * (9/5) + 32);
 }
