@@ -34,8 +34,12 @@ generateStartup();
 // the generateStartup function is called when
 // the "Generate New Startup" button is clicked
 function generateStartup() {
+	var randomNumber1 = getRandomNumber();
+	var randomNumber2 = getRandomNumber();
 
-	// TODO: generate two random index numbers, one for each array
+	function getRandomNumber() {
+	  return Math.round(Math.random() * (6 - 1) + 1);
+	}
 
 	// TODO: concatenate the fixed text with the two random values
 	//       to create a new startup idea like:
