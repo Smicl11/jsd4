@@ -1,4 +1,3 @@
-console.log("sanity check");
 // Setup / Data
 // ------------------------------------------
 var startupX = ['Uber', 'Google', 'Amazon', 'Apple', 'Facebook', 'Twitter'];
@@ -42,17 +41,10 @@ function generateStartup() {
 	  return Math.round(Math.random() * (6 - 1) + 1);
 	}
 
-	console.log(randomNumber2);
-	console.log(randomNumber1);
-
 	// TODO: concatenate the fixed text with the two random values
 	//       to create a new startup idea like:
 	//       "A startup that is Apple, but for Trello"
-	//startupIdea = "A startup that is Apple, but for Trello";
 	startupIdea = "A startup that is " + startupX[randomNumber1] + ", but for " + startupY[randomNumber2];
-
-
-
 
 	// DONE: Update page with new startup idea
 	startup.innerHTML = startupIdea;
