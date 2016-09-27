@@ -3,6 +3,19 @@ console.log("sanity check");
 //creates new array
 var a = [1, 3, 6, 9, 14, 23, 55];
 
+a.forEach(add);
+
+function add(number) {
+  console.log(number);
+}
+
+// anonymous function
+var days = ["Mon", "Tue", "Wed"];
+
+days.forEach(function(day) {
+  console.log(day);
+});
+
 /**
 * Arrays
 * Most of your answers should be stored in variables called q1, q2 etc..
@@ -41,3 +54,31 @@ console.log("Question 3", q3);
 
 var q4 = q1[q1.length-1];
 console.log("Question 4", q4);
+
+
+/**
+* Question 5
+* Create an array of numbers using 1, 2, 3, and 4 as values.
+* Use a for loop, a forEach loop function to increase
+* each value by 1. You can either store each new value back in the original
+* array, or in a new array -- your choice. The end result should be
+* an array of numbers with values 2, 3, 4, and 5.
+*/
+var nums = [1, 2, 3, 4];
+var arr = [];
+
+nums.forEach(function(nums) {
+  arr.push(nums + 1);
+});
+
+console.log(arr);
+
+// for (i = 0; i < nums.length; i++) {
+//   nums = (nums[i] + 1);
+// }
+
+/**
+* Question 6
+* Using the array from Question 5, find the average of the numbers in the array
+* (average = sum of all numbers/number of numbers). Store the average in q6.
+*/
