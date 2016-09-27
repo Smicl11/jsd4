@@ -38,7 +38,7 @@ function generateStartup() {
 	var randomNumber2 = getRandomNumber();
 
 	function getRandomNumber() {
-	  return Math.round(Math.random() * (6 - 1) + 1);
+	  return Math.round(Math.random() * (6 - 1) );
 	}
 
 	startupIdea = "A startup that is " + startupX[randomNumber1] + ", but for " + startupY[randomNumber2];
