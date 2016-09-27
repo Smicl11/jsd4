@@ -20,15 +20,12 @@ var a = [1, 3, 6, 9, 14, 23, 55];
 var q1 = ["image1.png", "image2.png", "image3.png"];
 console.log("Question 1", q1);
 
-
 /** Question 2
 * Using the array from Question 1, store the first element of the array
 * in variable q2.
 */
 var q2 = q1[0];
 console.log("Question 2", q2);
-
-
 
 /** Question 3
 * Get the length of the first array (number of elements in the array)
