@@ -48,8 +48,10 @@ function getPrivilege(age) {
 		privilege = "You can rent a car! You go Glenn Coco!";
 	} else if (age >= 35 && age < 62) {
 		privilege = "You can run for President!";
-	} else if (age >= 62) {
+	} else if (age >= 62 && age <= 99) {
 		privilege = "You can collect Social Security benefits and retire";
+	} else if (age > 99) {
+		privilege = "You're probably dead.";
 	} else {
 		privilege = "You have no privileges!";
 	}
