@@ -22,7 +22,7 @@ function checkAge(e) {
 // Update page functions
 // ------------------------------------------
 function displayPrivilege(privilege) {
-	p.innerHTML = privilege
+	p.innerHTML = privilege;
 }
 
 
@@ -31,4 +31,27 @@ function displayPrivilege(privilege) {
 // Determine the privilege to display
 // ------------------------------------------
 
-// TODO: write the getPrivilege function here
+// write the getPrivilege function here
+
+function getPrivilege(age) {
+	var privilege;
+
+	if (age <= 16) {
+		privilege = "You cannot do much outside of going to school";
+	} else if (age > 16 && age < 18 ) {
+		privilege = "You can drive!";
+	} else if (age >= 18 && age < 21) {
+		privilege = "You can vote!";
+	} else if (age >= 21 && age < 25) {
+		privilege = "You can drink alcohol!";
+	} else if (age >= 25 && age < 35) {
+		privilege = "You can rent a car! You go Glenn Coco!";
+	} else if (age >= 35 && age < 62) {
+		privilege = "You can run for President!";
+	} else if (age >= 62) {
+		privilege = "You can collect Social Security benefits and retire";
+	} else {
+		privilege = "You have no privileges!";
+	}
+	return privilege;
+}
