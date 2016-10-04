@@ -52,9 +52,8 @@ function generateStartup() {
 // the saveFavorite function is called when
 // the "Save Favorite" button is clicked
 function saveFavorite() {
-
-	// TODO: add the new idea to the array
-
+	favorites.push(startupIdea);
+	console.log("Saved: ", startupIdea);
 }
 
 
