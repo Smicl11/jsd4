@@ -20,7 +20,7 @@ var monkey1 = {
   species: "spider monkey",
   foodsEaten: ["bananas", "cococuts", "dignity"],
   eatSomething: function(thingAsString) {
-    var food = this.foodsEaten[0];
+    var food = this.foodsEaten[2];
     console.log(food);
   },
   introduce: function() {
