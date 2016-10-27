@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Foodie</title>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no">
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/foodie.css">
+	</head>
+	<body>
+
+	<h1>Foodie</h1>
+
+	<form>
+		<input class="zip" placeholder="Zip code">
+	</form>
+
+	<ul class="results">
+	<!--
+		<li>
+			<h2>Name</h2>
+			<p>Address</p>
+		</li>
+
+	 -->
+	</ul>
+
+	<script id="restaurant-template" type="text/x-handlebars-template">
+    {{#each restaurants}}
+        <li>
+            {{#if image_url}}<img src="{{image_url}}" alt="{{name}}">{{/if}}
+            <h2>{{name}}</h2>
+            <div class="price value{{price}}">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <p>{{address}}</p>
+            <p>
+            {{#if reserve_url}}<p>
+                <a href="{{reserve_url}}">Make a reservation »</a>
+            </p>{{/if}}
+            {{#if lat}}{{#if lng}}<p>
+                <a href="https://www.google.com/maps/preview/@{{lat}},{{lng}},16z">Google Maps</a>
+            </p>{{/if}}{{/if}}
+        </li>
+    {{/each}}
+	</script>
+
+	<!-- SCRIPTS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="js/handlebars.js"></script>
+	<script src="js/foodie.js"></script>
+
+	</body>
+</html>
